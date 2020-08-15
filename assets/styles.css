@@ -11,11 +11,9 @@ body {
   font-family: "Dm sans", sans-serif;
 }
 .container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
-
-
 
 /* === Navigation Bar ===*/
 .logo {
@@ -123,8 +121,8 @@ body {
 .row {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
+
 }
 
 .home {
@@ -145,48 +143,87 @@ body {
 
 .synopsis {
   width: 85%;
-  padding-bottom: .1em;
+  padding-bottom: 0.1em;
   font-size: 1.3em;
 }
 
-.motto{
+.motto {
   font-family: "Philosopher", sans-serif;
-  margin:.25em auto;
-  padding:-.3em;
+  margin: 0.25em auto;
+  padding: -0.3em;
 }
 
-.purchase_btn{
-  text-decoration:none;
-  background:#263b5e;
-  color:#ffffff;
-  padding:.7em 2.5em;
+.purchase_btn {
+  text-decoration: none;
+  background: #263b5e;
+  color: #ffffff;
+  padding: 0.7em 2.5em;
   border-radius: 25px;
-  transition:all .2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .purchase_btn:hover {
-
   background: #ffffff;
-  color:#263b5e;
+  color: #263b5e;
 }
-.purchase_btn:hover .feather-shopping-cart, .purchase_btn:hover{
-  stroke:#263b5e;
+.purchase_btn:hover .feather-shopping-cart,
+.purchase_btn:hover {
+  stroke: #263b5e;
 }
 
-.feather-shopping-cart{
+.feather-shopping-cart {
   position: relative;
-  top:7px;
-  left:3px;
-  width:1.4em;
+  top: 7px;
+  left: 3px;
+  width: 1.4em;
 }
 
-.note{
-  padding-top:.75em;
-  font-size:.8em
+.note {
+  padding-top: 0.75em;
+  font-size: 0.8em;
 }
-.book_cover{
+.book_cover {
   display: none;
 }
+
+/* === About PAGE === */
+.about {
+  padding-top: 5em;
+}
+.about .row{
+  justify-content: flex-start;
+}
+.about_heading {
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #263b5e;
+}
+
+.feature{
+  margin:auto;
+  width:60%;
+  text-align: center;
+}
+
+.features {
+  color: #263b5e;
+}
+.description {
+  color: #4f6d9b;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.feature_heading {
+  text-align: center;
+}
+
+.mockup_device {
+  width: 70%;
+  margin:auto;
+}
+
 /* === Media querry (Desktop) === */
 @media screen and (min-width: 992px) {
   /* === Navigation Bar === */
@@ -233,24 +270,46 @@ body {
   }
 
   /* === Home === */
-  .row{
+  .row {
     flex-direction: row;
   }
-  .title{
-    font-size:7em;
+  .title {
+    font-size: 7em;
   }
-  
-  .synopsis{
-    font-size:1.2em;
+
+  .synopsis {
+    font-size: 1.2em;
   }
-  .book_cover{
+  .book_cover {
     display: block;
     border-radius: 4px;
-    box-shadow:
-    0 16.7px 7.7px -12px rgba(0, 0, 0, 0.108),
-    0 32.8px 21.3px -12px rgba(0, 0, 0, 0.155),
-    0 55.2px 51.3px -12px rgba(0, 0, 0, 0.202),
-    0 107px 170px -12px rgba(0, 0, 0, 0.31)
-  ;
+    box-shadow: 0 16.7px 7.7px -12px rgba(0, 0, 0, 0.108),
+      0 32.8px 21.3px -12px rgba(0, 0, 0, 0.155),
+      0 55.2px 51.3px -12px rgba(0, 0, 0, 0.202),
+      0 107px 170px -12px rgba(0, 0, 0, 0.31);
+  }
+
+  /* ==== About PAGE === */ 
+  .features{
+    line-height:1.5;
+  }
+  .description{
+    font-size:1.5em;
+    margin-left:1.2em ;
+    text-align: left;
+  }
+
+  .mockup_device{
+    width:35%;
+  }
+
+  .feature_heading{
+    margin-left:1.2em ;
+    text-align: left;
+  }
+  .feature{
+    font-size:1.1em;
+    margin-left:1.8em;
+    text-align: left;
   }
 }
