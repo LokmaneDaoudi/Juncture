@@ -225,7 +225,95 @@ body {
   margin:auto;
 }
 
-/* === content PAGE === */
+/* === Author PAGE === */
+.author{
+  padding-top: 5em;
+  color:#263b5e;
+}
+
+.author_picture{
+  width:70%;
+}
+
+.author_heading{
+  margin-bottom: -1.3em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size:2em;
+}
+
+.author_name{
+  text-align: center;
+  margin-bottom: -.8%;
+  font-size: 2.5em;
+}
+.biography{
+  width:80%;
+  font-size:1.2em;
+  padding-top:1.2em;
+  margin:auto;
+}
+.author_title{
+  color:#5E2F4A;
+  margin:0;
+  font-size:1em;
+  text-align: center;
+}
+
+.signature{
+  width:75%;
+  margin: auto;
+}
+.flw_me{
+  font-size:1.1em;
+}
+.social{
+  display: flex;
+  align-items:center ;
+  
+  margin-left:2.25em;
+  margin-bottom: -.3em;
+}
+
+.social_icon{
+  color: #263b5e;
+}
+
+
+
+.icons svg:hover{
+  fill:#263b5e;
+}
+
+.donate_btn{
+  text-decoration: none;
+  background: #593C1F;
+  color: #ffffff;
+  padding: 0.7em 2.5em;
+  border-radius: 25px;
+  transition: all 0.2s ease-out;
+  margin-left:2.25em;
+}
+.donate_note{
+  width:70%;
+  margin-left:2.25em;
+  
+}
+.feather-coffee{
+  position: relative;
+  top: 7px;
+  left: 3px;
+  width: 1.4em;
+}
+
+.donate_btn:hover {
+  background: #ffffff;
+  color: #593C1F;
+}
+.donate_btn:hover .feather-coffee,
+.donate_btn:hover {
+  stroke: #593C1F;
+}
 /* === Media querry (Desktop) === */
 @media screen and (min-width: 992px) {
   /* === Navigation Bar === */
@@ -315,5 +403,47 @@ body {
     margin-left:1.8em;
     text-align: left;
   }
- 
+ /* === author PAGE === */
+
+ .author_picture{
+   width:45%;
+ }
+ .signature{
+   width:65%;
+   margin:0 2em;
+ }
+ .author_name{
+   font-size:3em;
+ }
+ .author_title{
+   font-size:1.1em;
+ }
+
+ .biography{
+   font-size:1.25em;
+ }
+
+.social{
+  display: flex;
+  align-items:center ;
+  margin-left:4em;
+  justify-content: unset;
+  margin-bottom: -.2em;
+}
+.icons svg{
+  margin-left:.4em;
+}
+.icons svg:hover{
+  fill:#263b5e;
+}
+.social_icon{
+  color:#263b5e;
+}
+.donate_btn{
+  margin-left:4em;
+}
+.donate_note{
+  text-align: unset;
+  margin-left:4.9em;
+}
 }
