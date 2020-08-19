@@ -9,7 +9,7 @@
   <body class="preload">
     <!--Navigation Bar-->
     <header class="header">
-      <a href="/" class="logo">Juncture</a>
+      <a href="#" class="logo" tabindex="none">Juncture</a>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"
         ><span class="nav-icon"></span
@@ -112,23 +112,22 @@
      <div class="contact">
        <h1 class="contact_heading">contact</h1>
        <div class="form_holder">
-       <form class=form id="form1"> 
+       <form class=form id="contactForm"> 
        <div class="form_group" id="myform">
-         <input type="text" class="form_control" placeholder="first name" id="name" name="name" tabindex="1" autocomplete="off" required>
+         <input type="text" class="form_control" placeholder="first name" id="name" name="name" tabindex="1" autocomplete="off" required >
          <label for="name" class="form_label">Your name</label>
        </div>
        <div class="form_group" >
-        <input type="email" class="form_control" placeholder="Jane@doe.com" id="email" name="email" tabindex="2" autocomplete="off" required>
+        <input type="email" class="form_control" placeholder="Jane@doe.com" id="email" name="email" tabindex="2" autocomplete="off" required >
         <label for="email" class="form_label">Your email</label>
       </div>
       <div class="form_group">
-        <textarea id="message" class="form_control" name="message" placeholder="your message" rows="10" cols="39" required></textarea>
+        <textarea id="message" class="form_control" name="message" placeholder="your message"  tabindex="3" rows="10" cols="39" ></textarea>
         <label for="message" class="form_label--ta">Your message</label>
         <label class="contact_note">set your mind at rest, we will not spam your inbox</label>
       </div>
-      <button type="submit" for="form1" class="contact_btn">submit</button>
+      <button type="submit" for="contactForm" class="contact_btn">submit</button>
       </div>
-      
     </form>
 
   </div>
@@ -139,6 +138,17 @@
 <footer class="footer">
   <p>&copy; Copyright <a href="" class="website_anchor">Juncture</a> All rights reserved-2020</p>
 </footer>
-    <script src="/assets/app.js"></script>
+
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+    <script src="../Juncture/assets/app.js"></script>
   </body>
 </html>
