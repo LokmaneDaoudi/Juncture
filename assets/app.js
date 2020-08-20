@@ -10,12 +10,13 @@
   measurementId: "G-D4Y088FR28"
 }; 
 
-// * Refrence messeages collection
-var messagesRef = firebase.database().ref("messages")
 
 // * Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
+
+// * Refrence messeages collection
+var messagesRef = firebase.database().ref("messages");
 
 // * Listen for form submit
 document.getElementById("contactForm").addEventListener("submit", submitForm);
