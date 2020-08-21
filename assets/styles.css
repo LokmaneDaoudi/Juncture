@@ -249,7 +249,7 @@ body {
 .biography {
   width: 80%;
   font-size: 1.2em;
-  text-align:center;
+  text-align:justify;
   padding-top: 1.2em;
   margin: auto;
 }
@@ -556,7 +556,7 @@ body {
   }
 
   .biography {
-    text-align:unset;
+    text-align:justify;
     font-size: 1.25em;
   }
 
