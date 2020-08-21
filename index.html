@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <title>Juncture | Download for free</title>
   </head>
   <body class="preload">
@@ -114,11 +115,11 @@
        <div class="form_holder">
        <form class="form" id="contactForm"> 
        <div class="form_group" id="myform">
-         <input type="text" class="form_control" placeholder="first name" id="name" name="name" tabindex="1" autocomplete="off" required >
+         <input type="text" class="form_control" placeholder="first name" id="name" name="name" tabindex="1" autocomplete="off"  >
          <label for="name" class="form_label">Your name</label>
        </div>
        <div class="form_group" >
-        <input type="email" class="form_control" placeholder="Jane@doe.com" id="email" name="email" tabindex="2" autocomplete="off" required >
+        <input type="email" class="form_control" placeholder="Jane@doe.com" id="email" name="email" tabindex="2" autocomplete="off"  >
         <label for="email" class="form_label">Your email</label>
       </div>
       <div class="form_group">
@@ -126,7 +127,7 @@
         <label for="message" class="form_label--ta">Your message</label>
         <label class="contact_note">set your mind at rest, we will not spam your inbox</label>
       </div>
-      <button type="submit" for="contactForm" class="contact_btn">submit</button>
+      <button type="submit" id="submit" for="contactForm" class="contact_btn">submit</button>
       </div>
     </form>
 
@@ -138,9 +139,11 @@
 <footer class="footer">
   <p>&copy; Copyright <a href="" class="website_anchor">Juncture</a> All rights reserved-2020</p>
 </footer>
+  <!-- JavaScript CDN'S -->
 
+  <!--Firebase CDN-->
   <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <!-- Firebase App (the core Firebase SDK) is always  and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
 
   <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
@@ -157,6 +160,9 @@
   <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-functions.js"></script> 
   <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-storage.js"></script> 
   <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-database.js"></script>
-    <script src="../Juncture/assets/app.js"></script>
-  </body>
+  <!--JavaScript File-->
+  <script src="../Juncture/assets/app.js"></script>
+  <!--Sweet Alert 2 CDN-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
 </html>

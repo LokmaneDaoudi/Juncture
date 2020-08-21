@@ -46,3 +46,30 @@ function saveMessage(name,email,message){
    message : message
   });
 }
+
+// SweetAlert
+$("#submit").click(function(){
+  if(name == '' || email == '' || message == ''){
+    swal ({
+      tile:"Fields empty",
+      text:"Please chack the missing fields!",
+      icon:"warning"
+    });
+  } else {
+    swal ({
+      tile:"Thanks for your feedback",
+      text:"If you're using Adblock your message won't be received",
+      icon:"success"
+    });
+  }
+} 
+
+
+
+
+
+
+
+
+
+);
