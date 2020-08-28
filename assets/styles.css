@@ -5,6 +5,8 @@
 *::after {
   box-sizing: border-box;
 }
+
+
 body {
   margin: 0;
   background: #f4f4f4;
@@ -16,6 +18,9 @@ body {
   margin: 0 auto;
 }
 
+section{
+  scroll-snap-align: center;
+}
 /* === Navigation Bar ===*/
 .logo {
   margin-left: 1.1rem;

@@ -36,7 +36,7 @@ function getInputVal(id){
   return document.getElementById(id).value;
 }
 
-// * Sava message
+// * Save a message
 
 function saveMessage(name,email,message){
   var newMessageRef = messagesRef.push();
@@ -47,7 +47,8 @@ function saveMessage(name,email,message){
   });
 }
 
-// SweetAlert
-function SweetAlert(){
-  alert("Thanks for your feedback");
-}
+// Smooth scroll
+
+	const scroll = new SmoothScroll('.menu a[href*="#"]',{
+    speed:300
+  });
