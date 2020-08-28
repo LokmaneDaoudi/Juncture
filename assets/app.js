@@ -50,5 +50,5 @@ function saveMessage(name,email,message){
 // Smooth scroll
 
 	const scroll = new SmoothScroll('.menu a[href*="#"]',{
-    speed:300
+    speed:900
   });
