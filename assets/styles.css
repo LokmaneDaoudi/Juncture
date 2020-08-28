@@ -146,10 +146,11 @@ section{
   font-size: 4rem;
 }
 
-.synopsis {
+.summary {
   width: 85%;
   padding-bottom: 0.1em;
   font-size: 1.3em;
+  text-align:justify;
 }
 
 .motto {
